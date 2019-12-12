@@ -4,6 +4,11 @@ import styled from "styled-components"
 const HeroWrapper = styled.section`
   padding-top: 300px;
   margin-bottom: 200px;
+
+  @media (max-width: 425px) {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
 `
 
 const HeroHeading = styled.h1`
