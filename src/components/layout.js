@@ -8,7 +8,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Navigation from "./navigation"
-// import Footer from "./footer"
+import Footer from "./footer"
 import "./layout.css"
 
 // Query for site data
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Navigation />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

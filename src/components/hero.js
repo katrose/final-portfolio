@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const HeroWrapper = styled.div`
-  padding-top: 200px;
+  padding-top: 150px;
   padding-left: 200px;
 `
 
@@ -15,10 +15,17 @@ const Pink = styled.span`
   text-shadow: 5px 5px #e424f9;
 `
 
+const Description = styled.p`
+  max-width: 600px;
+`
+
 const Hero = () => (
   <HeroWrapper>
     <HeroHeading>Hi, I'm <Pink>Katherine Picazo.</Pink></HeroHeading>
-    <p>I'm a junior web developer currently living in Calgary.</p>
+    <Description>
+       I'm a junior web developer currently living in Calgary. I like learning new things. 
+       Sometimes I'm crazy and try to use a new framework 2 days before a project is due.
+    </Description>
   </HeroWrapper>
 )
 

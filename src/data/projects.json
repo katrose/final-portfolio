@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Pokedex",
+    "liveURL": "https://pokeapi-pokedex.netlify.com/",
+    "githubURL": "https://github.com/katrose/pokedex-api",
+    "description": "A basic Pokedex that displays all Kanto Pokemon, and a details page when a Pokemon is clicked.",
+    "tools": [
+      "HTML", 
+      "CSS", 
+      "JavaScript", 
+      "REST"
+    ]
+  },
+  {
+    "title": "Portfolio v1",
+    "liveURL": "https://protected-woodland-28726.herokuapp.com/",
+    "githubURL": "https://github.com/katrose/node-assignment-3-v2",
+    "description": "A static portfolio website with Node.js & Express.js on the backend.",
+    "tools": [
+      "Node.js", 
+      "Express.js", 
+      "HTML", 
+      "CSS", 
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Jekyll Blog",
+    "liveURL": "https://distracted-spence-debcfb.netlify.com",
+    "githubURL": "https://github.com/katrose/minima-final",
+    "description": "A blog built with the Jekyll CMS. Learned how to make posts, use pagination, and organize data with collections.",
+    "tools": [
+      "Jekyll", 
+      "HTML", 
+      "CSS"
+    ]
+  }
+]
