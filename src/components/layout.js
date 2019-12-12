@@ -13,6 +13,12 @@ import "./layout.css"
 const GlobalLayout = styled.div`
   padding-left: 200px;
   padding-right: 200px;
+
+  @media (max-width: 684px) {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `
 const Layout = ({ children }) => {
 

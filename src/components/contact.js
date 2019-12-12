@@ -26,7 +26,7 @@ const Contact = () => {
           <input type="email" id="email" name="email" />
 
           <label for="message">Message</label>
-          <textarea></textarea>
+          <textarea id="message"></textarea>
 
           <input type="submit" value="Send" />
         </FormGrid>

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const HeroWrapper = styled.div`
+const HeroWrapper = styled.section`
   padding-top: 150px;
   margin-bottom: 200px;
 `

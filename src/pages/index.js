@@ -9,7 +9,9 @@ import Contact from "../components/contact"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+    <Element id="home">
+      <Hero />
+    </Element>
     <Element id="projects">
       <Projects />
     </Element>

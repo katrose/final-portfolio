@@ -2,13 +2,20 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from 'react-scroll'
 
+const NavBar = styled.nav`
+  margin-bottom: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 200;
+  background-color: #363d79;
+  border-bottom: 1px solid #37f1ee;
+`
+
 const NavList = styled.ul`
   padding-top: 20px;
-  padding-bottom: 15px;
   display: flex;
   justify-content: center;
   list-style-type: none;
-  border-bottom: 1px solid #37f1ee;
 
   a {
     font-family: Montserrat, sans-serif;
@@ -20,10 +27,21 @@ const NavList = styled.ul`
 // ref: https://stackoverflow.com/questions/54715462/how-to-scroll-to-a-specific-targeted-component-when-clicking-on-navbar-link
 
 const Navigation = () => (
-  <nav>
+  <NavBar>
     <NavList>
       <Link
+        to="home"
+        offset={-100}
+        spy={true}
+        smooth={true}
+        duration={500}
+      >
+        Home
+      </Link>
+      
+      <Link
         to="projects"
+        offset={-100}
         spy={true}
         smooth={true}
         duration={500}
@@ -32,6 +50,7 @@ const Navigation = () => (
       </Link>
       <Link
         to="contact"
+        offset={-100}
         spy={true}
         smooth={true}
         duration={500}
@@ -39,7 +58,7 @@ const Navigation = () => (
         Contact
       </Link>
     </NavList>
-  </nav>
+  </NavBar>
 )
 
 export default Navigation;

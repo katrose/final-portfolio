@@ -4,18 +4,24 @@ import { StaticQuery, graphql } from "gatsby"
 import githubIcon from "../images/icons_github.svg"
 import worldIcon from "../images/icons_world.svg"
 
-const ProjectWrapper = styled.div`
+const ProjectWrapper = styled.section`
+  margin: 0 auto;
   margin-bottom: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  
 `
 const ProjectHeading = styled.h2`
   font-size: 2.5em;
 `
 const ProjectTile = styled.div`
   display: grid;
-  grid-template-rows: 60px 60px 1fr 50px;
+  grid-template-rows: 60px 60px 1fr 1fr;
   padding: 20px;
   border: 1px solid white;
   li {
@@ -52,6 +58,9 @@ const ProjectTile = styled.div`
   .REST {
     background-color: orangered;
   }
+  .MongoDB {
+    background-color: darkcyan;
+  }
 
 `
 const ProjectLinks = styled.div`
@@ -61,15 +70,17 @@ const ProjectLinks = styled.div`
   img {
     padding: 5px;
   }
-
-  
-
 `
-
 const ProjectToolList = styled.ul`
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+
+  li {
+    align-self: flex-start;
+    border-radius: 10px;
+  }
 `
 const Projects = () => {
 
