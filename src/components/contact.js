@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
+const ContactWrapper = styled.section`
+  margin-bottom: 300px;
+`
+
 const ContactHeading = styled.h2`
   font-size: 2.5em;
 `
@@ -11,7 +15,7 @@ const FormGrid = styled.div`
 
 const Contact = () => {
   return(
-    <section>
+    <ContactWrapper>
       <ContactHeading>Let's connect</ContactHeading>
       <form action="https://formspree.io/xbjjnogg" method="POST">
         <FormGrid>
@@ -27,7 +31,7 @@ const Contact = () => {
           <input type="submit" value="Send" />
         </FormGrid>
       </form>
-    </section>
+    </ContactWrapper>
   )
 }
 
