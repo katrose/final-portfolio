@@ -11,12 +11,22 @@ const ContactHeading = styled.h2`
 const FormGrid = styled.div`
   display: flex;
   flex-direction: column;
+
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    align-self: flex-start;
+  }
 `
 
 const Contact = () => {
   return(
     <ContactWrapper>
-      <ContactHeading>Let's connect</ContactHeading>
+      <ContactHeading>Let's connect!</ContactHeading>
+      <h3>Fill out the form to send me an email.</h3>
       <form action="https://formspree.io/xbjjnogg" method="POST">
         <FormGrid>
           <label for="name">Name</label>
