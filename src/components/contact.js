@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 
 const ContactWrapper = styled.section`
   margin-bottom: 300px;
 `
-
 const ContactHeading = styled.h2`
   font-size: 2.5em;
 `
@@ -24,6 +24,7 @@ const FormGrid = styled.div`
 
 const Contact = () => {
   return(
+    <Fade left>
     <ContactWrapper>
       <ContactHeading>Let's connect!</ContactHeading>
       <h3>Fill out the form to send me an email.</h3>
@@ -42,6 +43,7 @@ const Contact = () => {
         </FormGrid>
       </form>
     </ContactWrapper>
+    </Fade>
   )
 }
 

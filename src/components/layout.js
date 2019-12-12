@@ -21,8 +21,6 @@ const GlobalLayout = styled.div`
   }
 `
 const Layout = ({ children }) => {
-
-
   return (
     <>
       <Navigation />

@@ -2,6 +2,7 @@
 
 The main goal of this portfolio was to learn Gatsby and Styled Components.
 
-## Plugins That I Used
+## Plugins Used
 - react-scroll
+- react-reveal
 - Styled Components

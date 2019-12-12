@@ -28,8 +28,8 @@ const Hero = () => (
   <HeroWrapper>
     <HeroHeading>Hi, I'm <Pink>Katherine Picazo.</Pink></HeroHeading>
     <Description>
-       I'm a junior web developer currently living in Calgary. I like learning new things. 
-       Sometimes I'm crazy and try to use a new framework 2 days before a project is due.
+      I'm a junior web developer currently living in Calgary. I like learning new things. 
+      Sometimes I'm crazy and try to use a new framework 2 days before a project is due.
     </Description>
   </HeroWrapper>
 )
