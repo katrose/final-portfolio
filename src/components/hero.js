@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const HeroWrapper = styled.div`
   padding-top: 150px;
-  padding-left: 200px;
+  margin-bottom: 200px;
 `
 
 const HeroHeading = styled.h1`

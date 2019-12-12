@@ -6,7 +6,8 @@
     "description": "A basic Pokedex that displays all Kanto Pokemon, and a details page when a Pokemon is clicked.",
     "tools": [
       "HTML", 
-      "CSS", 
+      "CSS",
+      "SASS", 
       "JavaScript", 
       "REST"
     ]
@@ -17,8 +18,9 @@
     "githubURL": "https://github.com/katrose/node-assignment-3-v2",
     "description": "A static portfolio website with Node.js & Express.js on the backend.",
     "tools": [
-      "Node.js", 
-      "Express.js", 
+      "Node", 
+      "Express", 
+      "EJS",
       "HTML", 
       "CSS", 
       "JavaScript"

@@ -5,28 +5,26 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
-
+import styled from "styled-components"
 import Navigation from "./navigation"
 import Footer from "./footer"
 import "./layout.css"
 
+const GlobalLayout = styled.div`
+  padding-left: 200px;
+  padding-right: 200px;
+`
+
 // Query for site data
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
+
 
   return (
     <>
       <Navigation />
-      <main>{children}</main>
+      <GlobalLayout>
+        <main>{children}</main>
+      </GlobalLayout>
       <Footer />
     </>
   )
