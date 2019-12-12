@@ -14,8 +14,6 @@ const GlobalLayout = styled.div`
   padding-left: 200px;
   padding-right: 200px;
 `
-
-// Query for site data
 const Layout = ({ children }) => {
 
 

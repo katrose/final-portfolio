@@ -6,7 +6,7 @@ const ProjectHeading = styled.h2`
   font-size: 2.5em;
 `
 const ProjectWrapper = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -16,47 +16,37 @@ const ProjectTile = styled.div`
   grid-template-rows: 60px 1fr 50px;
   padding: 20px;
   border: 1px solid white;
-
   li {
     margin-right: 5px;
     padding: 5px 5px;
   }
-
   .HTML {
     background-color: yellow;
     color: black;
   }
-
   .Jekyll {
     background-color: pink;
     color: black;
   }
-
   .CSS {
     background-color: rebeccapurple;
   }
-
   .SASS {
     background-color: royalblue;
   }
-
   .JavaScript {
     background-color: lightblue;
     color: black;
   }
-
   .Node {
     background-color: darkgreen;
   }
-
   .Express {
     background-color: black;
   }
-
   .EJS {
     background-color: magenta;
   }
-
   .REST {
     background-color: orangered;
   }
