@@ -1,9 +1,21 @@
 import React from "react"
 import styled from "styled-components"
+import heroImg from "../images/code-coder-coding-computer-270404.jpg"
 
 const HeroWrapper = styled.section`
-  padding-top: 300px;
-  margin-bottom: 200px;
+  background-image: url(${heroImg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rebeccapurple;
+
+  color: white;
+
+  padding-top: 150px;
+  padding-bottom: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: 425px) {
     padding-top: 100px;
@@ -12,24 +24,28 @@ const HeroWrapper = styled.section`
 `
 
 const HeroHeading = styled.h1`
-  font-size: 3em;
+  margin-bottom: 0;
+  font-size: 3.5em;
   font-weight: 700;
-`
 
-const Pink = styled.span`
-  text-shadow: 5px 5px #e424f9;
+  @media (max-width: 728px) {
+    padding: 30px;
+  }
 `
-
 const Description = styled.p`
-  max-width: 600px;
+  font-size: 2em;
+  max-width: 700px;
+
+  @media (max-width: 728px) {
+    padding: 30px;
+  }
 `
 
 const Hero = () => (
   <HeroWrapper>
-    <HeroHeading>Hi, I'm <Pink>Katherine Picazo.</Pink></HeroHeading>
+    <HeroHeading>Hi, I'm Katherine Picazo.</HeroHeading>
     <Description>
-      I'm a junior web developer currently living in Calgary. I like learning new things. 
-      Sometimes I'm crazy and try to use a new framework 2 days before a project is due.
+      I'm a junior web developer currently living in Calgary, Alberta, Canada.
     </Description>
   </HeroWrapper>
 )

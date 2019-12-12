@@ -7,7 +7,8 @@ const NavBar = styled.nav`
   width: 100vw;
   position: fixed;
   z-index: 200;
-  background-color: #363d79;
+  background-color: black;
+  color: white;
   border-bottom: 1px solid #37f1ee;
 `
 
@@ -30,13 +31,13 @@ const Navigation = () => (
   <NavBar>
     <NavList>
       <Link
-        to="home"
+        to="about"
         offset={-100}
         spy={true}
         smooth={true}
         duration={500}
       >
-        Home
+        About
       </Link>
       
       <Link
