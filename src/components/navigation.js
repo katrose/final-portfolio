@@ -37,7 +37,6 @@ const Navigation = () => (
     <NavList>
       <Link
         to="about"
-        offset={-100}
         spy={true}
         smooth={true}
         duration={500}
@@ -47,7 +46,7 @@ const Navigation = () => (
       
       <Link
         to="projects"
-        offset={-100}
+        offset={-70}
         spy={true}
         smooth={true}
         duration={500}
@@ -56,7 +55,7 @@ const Navigation = () => (
       </Link>
       <Link
         to="contact"
-        offset={-100}
+        offset={-70}
         spy={true}
         smooth={true}
         duration={500}

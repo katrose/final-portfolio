@@ -6,7 +6,7 @@ const ContactWrapper = styled.section`
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 350px;
   background-color: #a6bbbb;
 
   h3 {
