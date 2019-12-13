@@ -11,7 +11,7 @@ const FooterWrapper = styled.footer`
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 
-  @media (max-width: 425px) {
+  @media (max-width: 500px) {
     flex-direction: column;
   }
 `

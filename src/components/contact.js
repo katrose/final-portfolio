@@ -46,7 +46,7 @@ const Contact = () => {
             <input type="email" id="email" name="email" required/>
 
             <label for="message">Message</label>
-            <textarea id="message"></textarea>
+            <textarea id="message" rows="15"></textarea>
 
             <input type="submit" value="Send" />
           </FormGrid>

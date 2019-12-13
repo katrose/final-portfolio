@@ -28,3 +28,48 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Montserrat, sans-serif;
 }
+
+/* Form styling */
+input:focus {
+  outline: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+  padding: .5em;
+
+  width: 100%;
+
+  background-color: #f4f3ef;
+
+  font-size: 1.1em;
+
+  border: 1px solid #66615b;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  padding: .7em 1em;
+
+  background-color: #f4f3ef;
+  color: inherit;
+
+  font-family: inherit;
+  font-weight: bold;
+
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  
+  background-color: #66615b;
+  color: white;
+}
