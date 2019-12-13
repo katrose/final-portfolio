@@ -29,6 +29,7 @@ const HeroHeading = styled.h1`
   font-weight: 700;
 
   @media (max-width: 728px) {
+    font-size: 3em;
     padding: 30px;
   }
 `
@@ -37,6 +38,7 @@ const Description = styled.p`
   max-width: 700px;
 
   @media (max-width: 728px) {
+    font-size: 1.5em;
     padding: 30px;
   }
 `
