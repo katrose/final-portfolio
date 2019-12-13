@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import SVGIcon from "./svg"
+import Fade from "react-reveal/Fade"
 
 // Global component CSS variables
 const backgroundColor = '#f4f3ef'
@@ -34,7 +35,7 @@ const TileWrapper = styled.div`
 `
 const ProjectTile = styled.div`
   display: grid;
-  grid-template-rows: 50px 60px 1fr 1fr;
+  grid-template-rows: 50px 50px 2fr 1fr;
   padding: 20px;
   border: 1px solid ${textColor};
   h3 {
@@ -96,51 +97,53 @@ const ProjectToolList = styled.ul`
 const Projects = () => {
   return (
     <ProjectWrapper>
-      <ProjectHeading>Projects</ProjectHeading>
-      <StaticQuery
-        query={graphql`
-          query MyQuery {
-            allProjectsJson {
-              nodes {
-                title
-                description
-                githubURL
-                liveURL
-                tools
+      <Fade bottom>
+        <ProjectHeading>Projects</ProjectHeading>
+        <StaticQuery
+          query={graphql`
+            query MyQuery {
+              allProjectsJson {
+                nodes {
+                  title
+                  description
+                  githubURL
+                  liveURL
+                  tools
+                }
               }
             }
-          }
-        `}
-        render={data => (
-          <TileWrapper>
-            {data.allProjectsJson.nodes.map((project, index) => (
-              <ProjectTile>
-                <ProjectLinks>
-                  <a href={project.githubURL} target="_blank">
-                    <SVGIcon
-                      name="github"
-                      width={35}
-                    />
-                  </a>
-                  <a href={project.liveURL} target="_blank">
-                    <SVGIcon
-                      name="link"
-                      width={35}
-                    />
-                  </a>
-                </ProjectLinks>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <ProjectToolList>
-                  {project.tools.map(tool => (
-                    <li className={tool}>{tool}</li>
-                  ))}
-                </ProjectToolList>
-              </ProjectTile>
-            ))}
-          </TileWrapper>
-        )}
-      />
+          `}
+          render={data => (
+            <TileWrapper>
+              {data.allProjectsJson.nodes.map((project, index) => (
+                <ProjectTile>
+                  <ProjectLinks>
+                    <a href={project.githubURL} target="_blank">
+                      <SVGIcon
+                        name="github"
+                        width={35}
+                      />
+                    </a>
+                    <a href={project.liveURL} target="_blank">
+                      <SVGIcon
+                        name="link"
+                        width={35}
+                      />
+                    </a>
+                  </ProjectLinks>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <ProjectToolList>
+                    {project.tools.map(tool => (
+                      <li className={tool}>{tool}</li>
+                    ))}
+                  </ProjectToolList>
+                </ProjectTile>
+              ))}
+            </TileWrapper>
+          )}
+        />
+      </Fade>
     </ProjectWrapper>
   )
 }

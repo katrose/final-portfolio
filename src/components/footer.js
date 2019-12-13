@@ -8,6 +8,9 @@ const FooterWrapper = styled.footer`
   text-align: center;
   border-top: 1px solid #37f1ee;
 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
   @media (max-width: 425px) {
     flex-direction: column;
   }

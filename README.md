@@ -6,3 +6,7 @@ The main goal of this portfolio was to learn Gatsby and Styled Components.
 - react-scroll
 - react-reveal
 - Styled Components
+
+## The Process
+
+I started out with the basic Gatsby starter template... which pretty much had nothing on it. So everything was basically done from scratch.

@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import heroImg from "../images/code-coder-coding-computer-270404.jpg"
+import Fade from "react-reveal/Fade"
 
 const HeroWrapper = styled.section`
   background-image: url(${heroImg});
@@ -42,10 +43,12 @@ const Description = styled.p`
 
 const Hero = () => (
   <HeroWrapper>
-    <HeroHeading>Hi, I'm Katherine Picazo.</HeroHeading>
-    <Description>
-      I'm a junior web developer currently living in Calgary, Alberta, Canada.
-    </Description>
+    <Fade bottom>
+      <HeroHeading>Hi, I'm Katherine Picazo.</HeroHeading>
+      <Description>
+        I'm a junior web developer currently living in Calgary, Alberta, Canada.
+      </Description>
+    </Fade>
   </HeroWrapper>
 )
 
