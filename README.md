@@ -15,3 +15,7 @@ I started out with the basic Gatsby starter template... which pretty much had no
 ![Gatsby Starter](/src/images/starter-template.PNG)
 
 So everything was basically done from scratch!
+
+### Querying Data with GraphQL
+
+![GraphiQL Interface](/src/images/graphiql.gif)
