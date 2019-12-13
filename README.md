@@ -6,6 +6,7 @@ The main goal of this portfolio was to learn Gatsby and Styled Components.
 - react-scroll
 - react-reveal
 - Styled Components
+- Font Awesome
 
 ## The Process
 

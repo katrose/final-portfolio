@@ -71,11 +71,20 @@ const ProjectTile = styled.div`
   .EJS {
     background-color: magenta;
   }
-  .REST {
+  .REST-API {
     background-color: purple;
   }
   .MongoDB {
     background-color: darkcyan;
+  }
+  .Gatsby {
+    background-color: rebeccapurple;
+  }
+  .React {
+    background-color: dodgerblue;
+  }
+  .GraphQL {
+    background-color: mediumorchid;
   }
 `
 const ProjectLinks = styled.div`
