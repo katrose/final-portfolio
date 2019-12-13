@@ -5,8 +5,6 @@
     "githubURL": "https://github.com/katrose/pokedex-api",
     "description": "A basic Pokedex that displays all Kanto Pokemon, and a details page when a Pokemon is clicked.",
     "tools": [
-      "HTML", 
-      "CSS",
       "SASS", 
       "REST-API",
       "JavaScript"
@@ -21,8 +19,6 @@
       "Node", 
       "Express", 
       "EJS",
-      "HTML", 
-      "CSS", 
       "JavaScript",
       "MongoDB"
     ]
@@ -36,9 +32,7 @@
       "Gatsby",
       "React",
       "GraphQL",
-      "JavaScript",
-      "HTML", 
-      "CSS"
+      "JavaScript"
     ]
   },
   {
@@ -47,9 +41,7 @@
     "githubURL": "https://github.com/katrose/minima-final",
     "description": "A blog built with the Jekyll CMS. Learned how to make posts, use pagination, and organize data with collections.",
     "tools": [
-      "Jekyll", 
-      "HTML", 
-      "CSS"
+      "Jekyll"
     ]
   }
 ]

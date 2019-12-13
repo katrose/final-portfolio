@@ -26,7 +26,7 @@ const TileWrapper = styled.div`
   padding-bottom: 100px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 
   @media (max-width: 768px) {

@@ -15,7 +15,6 @@ const FooterWrapper = styled.footer`
     flex-direction: column;
   }
 `
-
 const Footer = () => (
   <FooterWrapper>
     <p>Katherine Picazo &copy; 2019</p>

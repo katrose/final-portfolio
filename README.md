@@ -5,8 +5,8 @@ The main goal of this portfolio was to learn Gatsby and Styled Components.
 ## Plugins Used
 - react-scroll
 - react-reveal
+- react-icons (for Font Awesome icons)
 - Styled Components
-- Font Awesome
 
 ## The Process
 

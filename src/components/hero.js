@@ -7,7 +7,7 @@ const HeroWrapper = styled.section`
   background-image: url(${heroImg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rebeccapurple;
+  background-color: black;
 
   color: white;
 
