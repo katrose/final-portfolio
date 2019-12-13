@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
+import SVGIcon from "./svg"
 import githubIcon from "../images/icons_github.svg"
 import worldIcon from "../images/icons_world.svg"
 
@@ -78,10 +79,6 @@ const ProjectTile = styled.div`
 const ProjectLinks = styled.div`
   display: flex;
   justify-content: flex-end;
-
-  img {
-    padding: 5px;
-  }
 `
 const ProjectToolList = styled.ul`
   margin: 0;
@@ -121,11 +118,17 @@ const Projects = () => {
 
                 <ProjectLinks>
                   <a href={project.githubURL} target="_blank">
-                    <img src={githubIcon} alt="Github Logo" height="40px"/>
+                    <SVGIcon
+                      name="github"
+                      width={35}
+                    />
                   </a>
 
                   <a href={project.liveURL} target="_blank">
-                    <img src={worldIcon} alt="Live URL" height="40px"/>
+                    <SVGIcon
+                      name="link"
+                      width={35}
+                    />
                   </a>
                 </ProjectLinks>
                 <h3>{project.title}</h3>
