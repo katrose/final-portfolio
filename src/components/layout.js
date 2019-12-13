@@ -11,7 +11,6 @@ import Footer from "./footer"
 import "./layout.css"
 
 const GlobalLayout = styled.div`
-
   margin: 0 auto;
 
   @media (max-width: 684px) {

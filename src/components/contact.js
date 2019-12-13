@@ -3,7 +3,10 @@ import styled from "styled-components"
 import Fade from "react-reveal/Fade"
 
 const ContactWrapper = styled.section`
-  margin-bottom: 300px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 200px;
+  background-color: #a6bbbb;
 `
 const ContactHeading = styled.h2`
   font-size: 2.5em;

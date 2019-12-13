@@ -4,9 +4,26 @@ import { StaticQuery, graphql } from "gatsby"
 import githubIcon from "../images/icons_github.svg"
 import worldIcon from "../images/icons_world.svg"
 
+// Global component CSS variables
+const backgroundColor = '#f4f3ef'
+const textColor = '#66615b'
+
+// Component styles
 const ProjectWrapper = styled.section`
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: ${backgroundColor};
+  color: ${textColor};
+`
+const ProjectHeading = styled.h2`
+  margin-bottom: 30px;
+  font-size: 2.5em;
+`
+const TileWrapper = styled.div`
   margin: 0 auto;
-  margin-bottom: 200px;
+  padding-bottom: 100px;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
@@ -14,16 +31,12 @@ const ProjectWrapper = styled.section`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-  
-`
-const ProjectHeading = styled.h2`
-  font-size: 2.5em;
 `
 const ProjectTile = styled.div`
   display: grid;
   grid-template-rows: 60px 60px 1fr 1fr;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid ${textColor};
   li {
     margin-right: 5px;
     padding: 5px 5px;
@@ -61,7 +74,6 @@ const ProjectTile = styled.div`
   .MongoDB {
     background-color: darkcyan;
   }
-
 `
 const ProjectLinks = styled.div`
   display: flex;
@@ -82,10 +94,10 @@ const ProjectToolList = styled.ul`
     border-radius: 10px;
   }
 `
-const Projects = () => {
 
+const Projects = () => {
   return (
-    <section>
+    <ProjectWrapper>
       <ProjectHeading>Projects</ProjectHeading>
       <StaticQuery
         query={graphql`
@@ -102,7 +114,7 @@ const Projects = () => {
           }
         `}
         render={data => (
-          <ProjectWrapper>
+          <TileWrapper>
 
             {data.allProjectsJson.nodes.map((project, index) => (
               <ProjectTile>
@@ -124,10 +136,10 @@ const Projects = () => {
                 </ProjectToolList>
               </ProjectTile>
             ))}
-          </ProjectWrapper>
+          </TileWrapper>
         )}
       />
-    </section>
+    </ProjectWrapper>
   )
 }
 

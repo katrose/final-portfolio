@@ -10,7 +10,7 @@ const HeroWrapper = styled.section`
 
   color: white;
 
-  padding-top: 150px;
+  padding-top: 170px;
   padding-bottom: 200px;
 
   display: flex;

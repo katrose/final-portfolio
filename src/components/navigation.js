@@ -5,19 +5,24 @@ import { Link } from 'react-scroll'
 const NavBar = styled.nav`
   margin-bottom: 0;
   width: 100vw;
+
   position: fixed;
   z-index: 200;
-  background-color: black;
+
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-bottom: 1px solid #37f1ee;
 `
 
 const NavList = styled.ul`
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   display: flex;
   justify-content: center;
+  
   list-style-type: none;
-
+  
   a {
     font-family: Montserrat, sans-serif;
     padding: 10px;
