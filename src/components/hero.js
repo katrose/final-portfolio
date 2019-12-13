@@ -19,7 +19,6 @@ const HeroWrapper = styled.section`
 
   @media (max-width: 425px) {
     padding-top: 100px;
-    margin-bottom: 100px;
   }
 `
 
